@@ -1,0 +1,11 @@
+.red {
+    /* 宽  高  背景色 */
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.orange {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}

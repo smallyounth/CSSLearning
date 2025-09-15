@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的选择器</title>
+    <!-- 标签选择器：同名标签会设置相同的样式，无法差异化同盟标签样式 -->
+     <link rel="stylesheet" href="./my.css">
+    <!-- 类选择器：使用方式：标签中的class="类名"  来指定类名  
+                            .类名 {CSS属性} 来设置样式
+            一个类名可以供多个标签使用，相同类名会设置相同的样式  
+            一个标签可以使用多个类名，类名之间用空格隔开     -->
+    <!-- id选择器： 使用方式：标签中的id="id名" 来指定id  
+                            #id名 {CSS属性} 来设置样式
+           **规则**： id名在一个页面中只能使用一次  用于差异化标签样式  
+           **一般式配合JavaScript使用的，很少用来设置CSS样式                       -->
+
+
+        <!-- 优先级：  行内样式 > id选择器 > 类选择器 > 标签选择器 -->
+     <style>
+        .blue {
+            color: blue;
+        }
+        .black {
+            color: black;
+        }
+        .size {
+            font-size: 30px;
+        }
+        #large {
+            font-size: 50px;
+        }
+     </style>
+</head>
+<body>
+    <p>p标签</p>
+    <p class="black" id="large">p2标签</p>
+    <span class="blue size">span标签</span>
+</body>
+</html>
