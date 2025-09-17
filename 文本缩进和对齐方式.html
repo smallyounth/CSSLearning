@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本缩进和对齐</title>
+    <style>
+        p {
+            /* 文本缩进2个字  em表示一个字的像素大小 */
+            text-indent: 2em;
+            font-size: 30px;
+        }
+        div {
+            /* text-align本质是对文本内容进行操作，而不是对标签操作 */
+            /* 文本居中 */
+            text-align: center;
+            /* 文本居左 */
+            /* text-align: left; */
+            /* 文本居右 */
+            /* text-align: right; */
+        }
+        /* 图片居中  需要考虑图片在哪个标签的范围中 */
+        .img {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>尬死了干净拉黑尬死了干净案例开噶还是个会离开
+        拉萨的概念俺是个撒旦就够了安徽工商联合不能把
+        阿桑的歌还是大家干哈司令部拉屎鞍钢阿拉伯那
+        萨力克不合格卡拉胶是干啥的两个客户</p>
+    <div>文字居中</div>
+    <div class="img">
+        <img src="../upImages/1.png" height="200px">
+    </div>
+</body>
+</html>

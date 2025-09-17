@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体样式修改</title>
+    <style>
+        div {
+            /* 一般网页中会设置字体族  
+            'Hiragino Sans GB', '\5b8b\4f53', sans-serif */
+            /* 最后一个属性即为 字体族    */
+            font-family: 楷体;
+        }
+        .style {
+            /* font复合属性： 文字倾斜 文字加粗 字体大小/行高 字体族(字体) */
+            /* 注意：字号和字体必须填写  不然font属性不生效 */
+            font: italic 700 40px/1.5 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>字体调整测试</div>
+    <p class="style">p标签</p>
+</body>
+</html>
