@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        /* 伪类选择器：选择器:伪类 {CSS属性} */
+        /* 作用：选择某个状态下的元素 */
+        /* 常用伪类
+           :link 选择所有 未访问的链接
+           :visited 选择所有 已访问的链接
+           :hover 选择鼠标悬停的元素
+           :active 选择活动状态的元素（被点击时）
+           最好将a标签的伪类按顺序书写  link visited hover active
+         */
+        a {
+            text-decoration: none;
+        } 
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        .box:hover {
+            color: orange;
+            font-size: 30px;
+        }
+        div:hover {
+            color: purple;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>div标签</div>
+    <a href="#">a标签</a>
+    <p class="box">p标签</p>
+</body>
+</html>

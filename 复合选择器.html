@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <!-- 后代选择器 ： 父选择器 子选择器 {CSS属性} -->
+     <!-- 后代选择器会选择父选择器中的所有子选择器 -->
+     <style>
+        div span {
+            color: red;
+        }
+        /* 子代选择器： 父选择器 > 子选择器 {CSS属性} */
+        /* 子代选择器只会选择父选择器中的直接子选择器 */
+        div > span { 
+            font-style: italic;
+        }
+        /* 并集选择器：选择器1，
+                      选择器2，
+                      选择器3，
+                      .....   
+                      能选中上面所有选择器，并生效*/
+        .h1,
+        .h2 {
+            color: black;
+        }              
+        /* 交集选择器：两个选择器连着即可 如p.class
+        注意：有标签时必须将标签写前面
+        作用：选择满足所有条件的选择器 */
+        span.box {
+            font-size: 30px;
+            color: green;
+        }
+     </style>
+
+</head>
+<body>
+    <div>div 标签</div>
+    <div>
+        <span>span 子标签</span>
+        <p>
+            <!-- 后代选择器中该span标签也会被选中生效 -->
+            <span>span 孙子标签</span>
+        </p>
+    </div>
+    <h1 class="h1">h1</h1>
+    <h2 class="h2">h2</h2>
+    <p class="box">p标签，使用了类选择器</p>
+    <p>p标签，没使用类选择器</p>
+    <span class="box">span标签，使用了类选择器</span>
+</body>
+</html>

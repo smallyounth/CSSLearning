@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的继承性</title>
+    <style>
+        body {
+            color: red;
+            /* font-size: 20px; */
+        }
+        p {
+            line-height: 20.67px;
+        }
+    </style>
+</head>
+<body>
+    <!-- body标签内的标签会自动继承body的属性 -->
+     <!-- 子类标签中未设置的样式会继承，已有的样式不会继承，相当于方法重写 -->
+    <p>p标签</p>
+    <!-- 普通文本也会继承属性 -->
+    阿道夫
+    <div>div标签</div>
+</body>
+</html>
