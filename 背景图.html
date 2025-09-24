@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图</title>
+    <style>
+        div {
+            /* 先设置盒子宽高 */
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            /* 默认是平铺效果  也就是复制粘贴铺满盒子 */
+            background-image: url(../upImages/1.png);
+            /* 可以控制是否平铺  no-repeat 显示未不平铺
+                                repeat  显示平铺
+                                repeat-x
+                                repeat-y     */
+            background-repeat: no-repeat;
+            /* 相当于坐标  0 0 表示左上角   
+                表示x y 轴的坐标  左上角是坐标原点*/
+            /* background-position: 0 0; */
+            /* 显示左下角  数字和英文可以混用 */
+            /* background-position: 50px bottom; */
+            /* 可以是负数  图片一部分会到盒子外部 */
+            /* background-position: -50px -50px; */
+            /* 图片居中效果 */
+            /* background-position: center center; */
+            /* 只写一个位置的坐标，另一个方向默认居中 */
+            background-position: 50px;
+            /* background-size: 200px 200px; */
+            /* contain ： 如果图的宽高和盒子相等时停止缩放，可能导致盒子有空白  */
+            /* background-size: contain; */
+            /* cover: 图片完全覆盖盒子，可能导致图片显示不全 */
+            /* background-size: cover; */
+            /* 100% 图片的宽度和盒子的宽度一样，高度进行等比例缩放 */
+            /* background-size: 100%; */
+
+        }
+    </style>
+</head>
+<body>
+    <div>div标签</div>
+</body>
+</html>

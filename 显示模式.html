@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+
+            /* 显示模式转换：dispaly属性 */
+            /* inline-block: 行内块元素 */
+            /* inline： 行内元素 */
+            /* block： 块内元素 */
+            display: inline-block; 
+        }
+        .div1 {
+            background-color: red;
+        }
+        .div2 {
+            background-color: blue;
+        }
+        span {
+            background-color: brown;
+            display: block;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 块级元素 -->
+     <!-- 性质：1.独占一行   2.宽度为父级的100%   3.添加宽高属性生效 -->
+    <div class="div1">div1 标签</div>
+    <div class="div2">div2 标签</div>
+
+    <!-- 行内元素 -->
+    <!-- 性质：1.一行共存多个   2.尺寸由内容决定   3.添加宽高属性不生效  -->
+     <span>span1 标签</span>
+     <span>span2 标签</span>
+
+     <!-- 行内块元素 -->
+      <!-- 性质：1.一行共存多个   2.尺寸由内容决定   3.添加宽高属性生效  -->
+      <img src="../upImages/1.png">
+      <img src="../upImages/1.png">
+</body>
+</html>
