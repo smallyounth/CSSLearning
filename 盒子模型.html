@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        /* 盒子模型 */
+        div {
+            /* width和height是内容区域 */
+            width: 200px;
+            height: 200px;
+
+            background-color: pink;
+            /* padding是内容与盒子边缘的距离  指内边距 */
+            /* padding: 20px; */
+            /* padding也可以单独设置某一方向的样式  和border类似 padding-left top bottom right */
+            padding-left: 10px;
+            padding-top: 30px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            /* padding有四值写法  三值写法  两值写法  从上开始顺时针赋值 */
+            /* padding: 20px 10px 30px 5px; 上 右 下 左 */
+            /* padding: 20px 10px; 上下  右左 */
+            /* border指边框线 盒子出现边框线 */
+            /* 属性：线条粗细  线条样式：solid 实线 dashed 虚线  dotted 点线 */
+            /* border: 2px solid red; */
+            /* 可单独设置border边框线某一方向的样式   */
+            /* border-left -top -right -bottom */
+            border-top: 2px solid red;
+            border-left: 2px dashed green;
+            border-right: 1px solid #000;
+            border-bottom: 1px solid yellow;
+            /* 出现在盒子外部  调整两个盒子之间的距离 */
+            /* margin也可以单独设置某一方向的样式  和padding的设置方式一样 margin-left top bottom right */
+            /* margin: 20px; */
+            /* margin-left: 20px;
+            margin-top: 20px;
+            margin-right: 30px;
+            margin-bottom: 50px; */
+            /* margin可以设置盒子在浏览器的位置  如居中等效果 */
+            /* margin: 0 auto; 上下0 左右自动居中 */
+            margin: auto; /* 上下左右都自动居中 */
+            /* 盒子尺寸问题：padding属性和border属性都会撑大盒子(浏览器默认方式)  盒子尺寸= 宽/高 + 左右侧padding/上下侧padding + 左右侧border/上下侧border */
+            /* 解决方式： 1.手动计算宽高 总宽减去padding和border   2.让浏览器自动计算宽高 */
+            box-sizing: border-box; /* 让浏览器自动计算宽高 */
+
+        }
+    </style>
+</head>
+<body>
+    <div>div 标签</div>
+</body>
+</html>

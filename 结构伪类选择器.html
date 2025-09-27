@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style>
+        /* 选择第一个标签 */
+        ul li:first-child {
+            font-weight: 700;
+        }
+        /* 选择最后一个标签 */
+        ul li:last-child {
+            font-style: italic;
+        }
+
+        /* 常用公式：2n：偶数  odd（2n+1)：奇数 5n：5的倍数   
+                    n+5:第5个之后的标签        */
+        /* 选择奇数的标签 */
+        ul li:nth-child(odd) {
+            color: red;
+        }
+        /* 选择满足3n的整数标签 */
+        ul li:nth-child(3n) {
+            background-color: #f3f3f4;
+        }
+        /* 第五个及之后的标签   n从开始  */
+        ul li:nth-child(n+5) {
+            text-decoration: underline;
+        }
+        /* 第5个及之前的标签 */
+        ul li:nth-child(-n+5) {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>li 1</li>
+        <li>li 2</li>
+        <li>li 3</li>
+        <li>li 4</li>
+        <li>li 5</li>
+        <li>li 6</li>
+    </ul>
+</body>
+</html>

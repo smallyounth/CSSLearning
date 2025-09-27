@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除默认格式</title>
+    <style>
+        /* 通配符选择器清除默认的内外边距属性 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* 启动内减模式，所有样式都自动减去padding和border的值，确保所有盒子模型都不会被自动撑大 */
+        }
+
+        /* 清除列表前面的符号 */
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 从以下的标签中得知，很多标签都有默认的外边距等样式，但在工作中一般为了美观会将其默认格式清除，使用自己设置的样式 -->
+    <h2>标题</h2>
+    <p>一个段落</p>
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ul>
+    <a href="#">一个链接</a>
+</body>
+</html>
