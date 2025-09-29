@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距合并问题</title>
+    <style>
+        /* 浏览器默认会取两个垂直排列的盒子中外边距较大的值（水平不会进行覆盖，而是相加）  如下面，两个盒子的间距为40px */
+        /* 以后注意即可，无需解决 */
+        
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* margin-top: 40px; */
+        }
+        .one {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* margin-bottom: 20px; */
+            text-align: right;
+            /* padding-top: 50px; */
+            /* box-sizing: border-box; */
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* 子级的margin会导致父子盒子一块向下移动，也就是塌陷 */
+            /* 三种解决方法：1.在父级设置padding，相当于设置内边距，把子级盒子当作整体内容
+                            2.设置父级overflow属性为hidden，浏览器能正确找到边缘位置，修正会正常位置
+                            3.设置父级border-top或border属性，原理与overflow一样，都是找到正确的边缘位置
+                     */
+            /* margin-top: 20px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+    
+        <div class="son">son</div>
+    </div>
+    <div class="two"></div>
+    
+</body>
+</html>

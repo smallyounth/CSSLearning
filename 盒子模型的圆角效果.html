@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角效果</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin: auto;
+            /* 圆角属性： 值有两种形式：1.像素值 2.百分比 */
+            border-radius: 20px;
+            /* 从左上角开始顺时针数，可以对每个角进行精细控制 */
+            /* 四值：左上 右上 右下 左下 */
+            border-radius:20px 30px 40px 50px ;
+            /* 三值：左上 右上和左下 右下 */
+            border-radius: 20px 30px 40px;
+            /* 二值：左上和右下 右上和坐下  */
+            border-radius: 20px 50px;
+            /* text-indent设置内容缩进 */
+            /* text-indent: 2em; */
+            /* padding-left设置左边的内边距 */
+            padding-left: 30px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>div 标签</div>
+</body>
+</html>

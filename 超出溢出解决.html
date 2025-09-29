@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超出溢出</title>
+    <style>
+        div {
+            background-color: orange;
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+
+            /* 内容溢出设置 */
+            /* 超出部分隐藏 */
+            /* overflow: hidden; */
+
+            /* 出现滚动条，可以滚动看内容  */
+            /* 无论内容是否溢出(现在优化了，和auto类似了) */
+            overflow: scroll;
+
+            /* 超出部分自动出现滚动条，下方和侧面有内容超出才出现滚动条 */
+            /* 也就是溢出才有滚动条 */
+            /* overflow: auto; */
+
+        }
+    </style>
+</head>
+<body>
+    <div>asd;lfkjfjfj
+        fjf
+        fjfjfjfjfjf
+        jfjfjfjfjf
+        jfjag
+        <!-- sddddddd
+        ddd
+        dddd
+        ddddddddd
+        da
+        sdff
+        fffffffff
+        fff
+        dsaf
+        dddddddd
+        dddd
+        dddd
+        djjjjjjj
+        jjj
+        jjjs
+        adfasdvg -->
+    </div>
+</body>
+</html>
