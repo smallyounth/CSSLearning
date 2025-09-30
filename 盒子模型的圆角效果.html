@@ -25,9 +25,28 @@
             padding-left: 30px;
             box-sizing: border-box;
         }
+
+        /* 特殊情况：通过圆角属性设置为  圆形   和   胶囊形状 */
+        /* 圆形条件：首先是正方形，接着设置border-radius属性为高度的一半或50%即可 */
+        .exp {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 0;
+            /* 圆角属性设置为高度的一般即可变为圆形 */
+            border-radius: 100px;
+        }
+        /* 胶囊形状条件：首先是长方形，接着设置border-radius属性为高度的一半 */
+        img {
+            width: 200px;
+            height: 100px;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
     <div>div 标签</div>
+    <div class="exp"></div>
+    <img src="../upImages/1.png">
 </body>
 </html>
